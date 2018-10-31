@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:aop="http://www.springframework.org/schema/aop"
+       xmlns:tx="http://www.springframework.org/schema/tx"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+           http://www.springframework.org/schema/beans/spring-beans-2.5.xsd
+
+
+            http://www.springframework.org/schema/aop
+           http://www.springframework.org/schema/aop/spring-aop-2.5.xsd
+           http://www.springframework.org/schema/tx 
+           http://www.springframework.org/schema/tx/spring-tx-2.5.xsd">
+
+    <!-- =====================================整合Hibernate========================================= -->
+    <!-- 第一种配置Hibernate的方法 -->
+    <bean id="sessionFactory" class="org.springframework.orm.hibernate3.LocalSessionFactoryBean">
+        <property name="configLocation" value="/k_spring_hibernate/configFiles/hibernate.cfg.xml"></property>
+    </bean>
+
+
+    <!-- 第二种配置Hibernate的方法 -->
+    <!-- <bean id="sessionFactory2" class="org.springframework.orm.hibernate3.LocalSessionFactoryBean">
+        <property name="dataSource" ref="dataSource"></property>需要DataSource
+        <property name="mappingDirectoryLocations">
+            <list>映射文件的位置
+                <value>day161220Model</value>
+            </list>
+        </property>
+        <property name="hibernateProperties">
+            <props>
+                <prop key="dialect">org.hibernate.dialect.MySQLDialect</prop>
+                <prop key="hbm2ddl.auto">update</prop>
+                <prop key="show_sql">true</prop>
+                <prop key="format_sql">true</prop>
+            </props>
+        </property>
+    </bean> -->
+    <bean id="personDao" class="k_spring_hibernate.implement.PersonDaoImp">
+        <property name="sessionFactory" ref="sessionFactory"></property>
+    </bean>
+    <bean id="service" class="k_spring_hibernate.implement.ServiceImp">
+        <property name="pdao" ref="personDao"></property>
+    </bean>
+    <!-- ==================================声明式事务处理============================================== -->
+    <!--事务管理器bean-->
+    <bean id="transactionManager" class="org.springframework.orm.hibernate3.HibernateTransactionManager">
+        <property name="sessionFactory" ref="sessionFactory"></property>
+    </bean>
+
+    <!--事务的声明:对哪一个事务使用事务管理器-->
+    <tx:advice transaction-manager="transactionManager" id="shiwuguanliqi">
+        <tx:attributes>
+            <tx:method name="register" isolation="DEFAULT" propagation="REQUIRED" read-only="false"/>
+            <tx:method name="zhuanzhang" isolation="DEFAULT" propagation="REQUIRED" read-only="false"/>
+        </tx:attributes>
+    </tx:advice>
+
+    <aop:config>
+        <aop:pointcut
+                expression="execution(* k_spring_hibernate.implement.ServiceImp.*(..))" id="perform"/>
+        <aop:advisor advice-ref="shiwuguanliqi" pointcut-ref="perform"/>
+    </aop:config>
+</beans>
+           

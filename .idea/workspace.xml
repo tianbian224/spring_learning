@@ -1,0 +1,632 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="0cc0ce43-ba2e-41b3-8d30-e38ba40a8a2e" name="Default Changelist" comment="学习spring相关内容">
+      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__antlr_antlr_2_7_6.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__aopalliance_aopalliance_1_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__asm_asm_1_5_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__asm_asm_attrs_1_5_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__cglib_cglib_2_1_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_guava_guava_19_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_collections_commons_collections_3_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_dbcp_commons_dbcp_1_4.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_logging_commons_logging_1_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_pool_commons_pool_1_5_4.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__dom4j_dom4j_1_6_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_transaction_jta_1_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__junit_junit_4_12.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__log4j_log4j_1_2_17.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__mysql_mysql_connector_java_5_1_6.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__net_sf_ehcache_ehcache_1_2_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_aspectj_aspectjweaver_1_8_9.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_hamcrest_hamcrest_core_1_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_hibernate_hibernate_3_2_5_ga.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_hibernate_hibernate_commons_annotations_3_2_0_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_hibernate_hibernate_core_3_6_9_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_hibernate_javax_persistence_hibernate_jpa_2_0_api_1_0_1_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_slf4j_api_1_7_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_slf4j_log4j12_1_7_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_aop_4_3_9_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_aspects_4_3_9_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_beans_4_3_9_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_context_4_3_9_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_context_support_4_3_9_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_core_4_3_9_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_dao_2_0_8.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_expression_4_3_9_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_hibernate3_2_0_8.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_jdbc_4_3_9_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_orm_4_3_9_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_test_4_3_9_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_tx_4_3_9_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/spring_learning.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring_beans/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring_beans/spring_beans.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring_beans/src/main/java/a_GetBeans/Abcd.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring_beans/src/main/java/a_GetBeans/InstanceFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring_beans/src/main/java/a_GetBeans/StaticFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring_beans/src/main/java/a_GetBeans/Test.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring_beans/src/main/java/a_GetBeans/说明.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring_beans/src/main/java/b_InitDestroy/Pro.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring_beans/src/main/java/b_InitDestroy/b_initDestroy包说明.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring_beans/src/main/java/b_InitDestroy/model/ABCBean.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring_beans/src/main/java/b_InitDestroy/model/Acdef.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring_beans/src/main/java/b_InitDestroy/model/LazyBean.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring_beans/src/main/java/b_InitDestroy/model/PrototypeBean.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring_beans/src/main/java/c_UnderstandingIoCAndID/Crayon.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring_beans/src/main/java/c_UnderstandingIoCAndID/Drawer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring_beans/src/main/java/c_UnderstandingIoCAndID/Pen.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring_beans/src/main/java/c_UnderstandingIoCAndID/Pencil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring_beans/src/main/java/c_UnderstandingIoCAndID/Pro.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring_beans/src/main/java/d_how_to_DI/Animal.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring_beans/src/main/java/d_how_to_DI/Person.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring_beans/src/main/java/d_how_to_DI/Pro.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring_beans/src/main/java/d_how_to_DI/Worker.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring_beans/src/main/java/e_use_anotation/auto_wired/CDPlayer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring_beans/src/main/java/e_use_anotation/auto_wired/CompactDisc.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring_beans/src/main/java/e_use_anotation/auto_wired/SgtPeppers.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring_beans/src/main/java/e_use_anotation/auto_wired/TgtPeppers.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring_beans/src/main/java/e_use_anotation/auto_wired/config/CDConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring_beans/src/main/java/e_use_anotation/auto_wired/test/CDPlayerTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring_beans/src/main/java/e_use_anotation/e_use_annotation说明.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring_beans/src/main/java/e_use_anotation/java_wired/config/JavaConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring_beans/src/main/java/e_use_anotation/java_wired/outerJavaClass/Computer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring_beans/src/main/java/e_use_anotation/java_wired/outerJavaClass/Mouse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring_beans/src/main/java/e_use_anotation/java_wired/test/TVTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring_beans/src/main/java/f_AOP_firstInstance/Pro.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring_beans/src/main/java/f_AOP_firstInstance/aspect/Transaction.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring_beans/src/main/java/f_AOP_firstInstance/target/Linzhiling.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring_beans/src/main/java/f_AOP_firstInstance/说明.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring_beans/src/main/java/g_AOP_advices/Pro.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring_beans/src/main/java/g_AOP_advices/aspect/Advices.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring_beans/src/main/java/g_AOP_advices/g_AOP说明.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring_beans/src/main/java/g_AOP_advices/target/Fanbingbing.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring_beans/src/main/java/h_AOP_zuoYe_Privilige/Pro_action.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring_beans/src/main/java/h_AOP_zuoYe_Privilige/QieMian.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring_beans/src/main/java/h_AOP_zuoYe_Privilige/annotation/AnnotationDecoder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring_beans/src/main/java/h_AOP_zuoYe_Privilige/annotation/Privilege.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring_beans/src/main/java/h_AOP_zuoYe_Privilige/impl/DaoImp.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring_beans/src/main/java/h_AOP_zuoYe_Privilige/impl/ServiceImp.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring_beans/src/main/java/h_AOP_zuoYe_Privilige/interfaces/Dao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring_beans/src/main/java/h_AOP_zuoYe_Privilige/interfaces/Service.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring_beans/src/main/java/h_AOP_zuoYe_Privilige/说明.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring_beans/src/main/java/i_AOP_TestTime/Action.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring_beans/src/main/java/i_AOP_TestTime/Dao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring_beans/src/main/java/i_AOP_TestTime/DaoImp.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring_beans/src/main/java/i_AOP_TestTime/Service.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring_beans/src/main/java/i_AOP_TestTime/ServiceImp.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring_beans/src/main/java/i_AOP_TestTime/TestTime.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring_beans/src/main/java/i_AOP_TestTime/testTime.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring_beans/src/main/java/j_spring_database/Pro.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring_beans/src/main/java/j_spring_database/configFiles/datasource.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring_beans/src/main/java/j_spring_database/configFiles/dbcpconfig.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring_beans/src/main/java/k_spring_hibernate/TestHibrenate.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring_beans/src/main/java/k_spring_hibernate/configFiles/Person.hbm.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring_beans/src/main/java/k_spring_hibernate/configFiles/Team.hbm.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring_beans/src/main/java/k_spring_hibernate/configFiles/hibernate.cfg.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring_beans/src/main/java/k_spring_hibernate/dao/InterfaceDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring_beans/src/main/java/k_spring_hibernate/dao/InterfaceService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring_beans/src/main/java/k_spring_hibernate/implement/PersonDaoImp.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring_beans/src/main/java/k_spring_hibernate/implement/ServiceImp.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring_beans/src/main/java/k_spring_hibernate/model/Person.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring_beans/src/main/java/k_spring_hibernate/model/Team.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring_beans/src/main/java/k_spring_hibernate/spring_hibernate.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring_beans/src/main/java/l_spring_transaction/Test.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring_beans/src/main/java/l_spring_transaction/model/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring_beans/src/main/resources/a_GetBeans.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring_beans/src/main/resources/b_InitDestroy.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring_beans/src/main/resources/c_UnderstandingIoCAndID.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring_beans/src/main/resources/d_how_to_DI.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring_beans/src/main/resources/f_AOP_firstInstance.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring_beans/src/main/resources/g_AOP_advices.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring_beans/src/main/resources/h_AOP_zuoYe_Privilige.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring_beans/src/main/resources/log4j.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring_beans/src/main/resources/说明.txt" afterDir="false" />
+    </list>
+    <ignored path="$PROJECT_DIR$/spring_beans/target/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FUSProjectUsageTrigger">
+    <session id="180547497">
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.open.time.9" value="1" />
+          <entry key="project.opened" value="1" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.open">
+        <counts>
+          <entry key="java" value="3" />
+          <entry key="properties" value="1" />
+          <entry key="txt" value="1" />
+          <entry key="xml" value="6" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.open">
+        <counts>
+          <entry key="JAVA" value="3" />
+          <entry key="PLAIN_TEXT" value="1" />
+          <entry key="Properties" value="1" />
+          <entry key="XML" value="6" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.edit">
+        <counts>
+          <entry key="txt" value="12" />
+          <entry key="xml" value="36" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.edit">
+        <counts>
+          <entry key="PLAIN_TEXT" value="12" />
+          <entry key="XML" value="36" />
+        </counts>
+      </usages-collector>
+    </session>
+  </component>
+  <component name="FileEditorManager">
+    <leaf>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/spring_beans/pom.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="186">
+              <caret line="123" lean-forward="true" selection-start-line="123" selection-end-line="123" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/spring_beans/src/main/resources/a_GetBeans.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="209">
+              <caret line="11" selection-start-line="11" selection-end-line="11" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/spring_beans/src/main/java/k_spring_hibernate/configFiles/hibernate.cfg.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-251">
+              <caret line="18" column="25" selection-start-line="18" selection-start-column="25" selection-end-line="18" selection-end-column="25" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/spring_beans/src/main/java/i_AOP_TestTime/DaoImp.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-368">
+              <caret line="19" selection-start-line="19" selection-end-line="19" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/spring_beans/src/main/java/e_use_anotation/java_wired/config/JavaConfig.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="123">
+              <caret line="19" column="7" selection-start-line="19" selection-start-column="7" selection-end-line="19" selection-end-column="7" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/spring_beans/src/main/java/j_spring_database/configFiles/datasource.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="205">
+              <caret line="20" column="11" selection-start-line="20" selection-start-column="11" selection-end-line="20" selection-end-column="11" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/spring_beans/src/main/java/j_spring_database/configFiles/dbcpconfig.properties">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-17">
+              <caret line="10" column="10" selection-start-line="10" selection-start-column="10" selection-end-line="10" selection-end-column="10" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/spring_beans/src/main/java/i_AOP_TestTime/testTime.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="77">
+              <caret line="22" column="40" selection-start-line="22" selection-start-column="40" selection-end-line="22" selection-end-column="40" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/spring_beans/src/main/java/i_AOP_TestTime/TestTime.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="133">
+              <caret line="10" column="23" selection-start-line="10" selection-start-column="23" selection-end-line="10" selection-end-column="23" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/spring_beans/src/main/resources/f_AOP_firstInstance.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="76">
+              <caret line="19" column="69" selection-start-line="19" selection-start-column="69" selection-end-line="19" selection-end-column="69" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/spring_beans/src/main/java/k_spring_hibernate/configFiles/hibernate.cfg.xml" />
+        <option value="$PROJECT_DIR$/spring_beans/src/main/java/j_spring_database/configFiles/datasource.xml" />
+        <option value="$PROJECT_DIR$/spring_beans/pom.xml" />
+        <option value="$PROJECT_DIR$/spring_beans/src/main/java/i_AOP_TestTime/testTime.xml" />
+        <option value="$PROJECT_DIR$/spring_beans/src/main/resources/f_AOP_firstInstance.xml" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHome" value="D:/Dev_tools/apache-maven-3.5.4-bin/apache-maven-3.0.5" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
+    <option name="width" value="1382" />
+    <option name="height" value="744" />
+  </component>
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="spring_learning" type="b2602c69:ProjectViewProjectNode" />
+              <item name="spring_learning" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="spring_learning" type="b2602c69:ProjectViewProjectNode" />
+              <item name="spring_learning" type="462c0819:PsiDirectoryNode" />
+              <item name="spring_beans" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="spring_learning" type="b2602c69:ProjectViewProjectNode" />
+              <item name="spring_learning" type="462c0819:PsiDirectoryNode" />
+              <item name="spring_beans" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="spring_learning" type="b2602c69:ProjectViewProjectNode" />
+              <item name="spring_learning" type="462c0819:PsiDirectoryNode" />
+              <item name="spring_beans" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="spring_learning" type="b2602c69:ProjectViewProjectNode" />
+              <item name="spring_learning" type="462c0819:PsiDirectoryNode" />
+              <item name="spring_beans" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="spring_learning" type="b2602c69:ProjectViewProjectNode" />
+              <item name="spring_learning" type="462c0819:PsiDirectoryNode" />
+              <item name="spring_beans" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="i_AOP_TestTime" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="spring_learning" type="b2602c69:ProjectViewProjectNode" />
+              <item name="spring_learning" type="462c0819:PsiDirectoryNode" />
+              <item name="spring_beans" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="j_spring_database" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="spring_learning" type="b2602c69:ProjectViewProjectNode" />
+              <item name="spring_learning" type="462c0819:PsiDirectoryNode" />
+              <item name="spring_beans" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="j_spring_database" type="462c0819:PsiDirectoryNode" />
+              <item name="configFiles" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="spring_learning" type="b2602c69:ProjectViewProjectNode" />
+              <item name="spring_learning" type="462c0819:PsiDirectoryNode" />
+              <item name="spring_beans" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ChangesTree.GroupingKeys" value="module" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1540958449869" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="project.structure.last.edited" value="Problems" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="MavenSettings" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\MyCode\spring_learning\spring_beans\src\main\java" />
+      <recent name="D:\MyCode\spring_learning\spring_beans\src\main\resources" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager">
+    <configuration name="Test.A" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="spring_beans" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="a_GetBeans.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="a_GetBeans" />
+      <option name="MAIN_CLASS_NAME" value="a_GetBeans.Test" />
+      <option name="METHOD_NAME" value="A" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.Test.A" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="0cc0ce43-ba2e-41b3-8d30-e38ba40a8a2e" name="Default Changelist" comment="" />
+      <created>1540957156264</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1540957156264</updated>
+      <workItem from="1540957165059" duration="1209000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="1209000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info id="Designer" />
+      <window_info id="Image Layers" />
+      <window_info id="UI Designer" />
+      <window_info id="Favorites" side_tool="true" />
+      <window_info id="Capture Tool" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24962178" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info anchor="bottom" id="FindBugs-IDEA" />
+      <window_info anchor="bottom" id="Spring" />
+      <window_info anchor="bottom" id="Terminal" weight="0.32933104" />
+      <window_info anchor="bottom" id="Event Log" side_tool="true" />
+      <window_info anchor="bottom" id="Database Changes" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" />
+      <window_info active="true" anchor="bottom" id="Messages" visible="true" weight="0.4716981" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="right" id="Palette" />
+      <window_info anchor="right" id="Capture Analysis" />
+      <window_info anchor="right" id="Database" />
+      <window_info anchor="right" id="Maven Projects" />
+      <window_info anchor="right" id="Palette&#9;" />
+      <window_info anchor="right" id="Theme Preview" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="学习spring相关内容" />
+    <option name="LAST_COMMIT_MESSAGE" value="学习spring相关内容" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/spring_beans/src/main/java/a_GetBeans/说明.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spring_beans/src/main/resources/a_GetBeans.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="209">
+          <caret line="11" selection-start-line="11" selection-end-line="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spring_beans/src/main/java/k_spring_hibernate/configFiles/hibernate.cfg.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-251">
+          <caret line="18" column="25" selection-start-line="18" selection-start-column="25" selection-end-line="18" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spring_beans/src/main/java/i_AOP_TestTime/DaoImp.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-368">
+          <caret line="19" selection-start-line="19" selection-end-line="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spring_beans/src/main/java/e_use_anotation/java_wired/config/JavaConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="123">
+          <caret line="19" column="7" selection-start-line="19" selection-start-column="7" selection-end-line="19" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spring_beans/src/main/java/j_spring_database/configFiles/dbcpconfig.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-17">
+          <caret line="10" column="10" selection-start-line="10" selection-start-column="10" selection-end-line="10" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spring_beans/src/main/java/j_spring_database/configFiles/datasource.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="205">
+          <caret line="20" column="11" selection-start-line="20" selection-start-column="11" selection-end-line="20" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spring_beans/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="186">
+          <caret line="123" lean-forward="true" selection-start-line="123" selection-end-line="123" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spring_beans/src/main/java/i_AOP_TestTime/TestTime.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="133">
+          <caret line="10" column="23" selection-start-line="10" selection-start-column="23" selection-end-line="10" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spring_beans/src/main/java/i_AOP_TestTime/testTime.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="77">
+          <caret line="22" column="40" selection-start-line="22" selection-start-column="40" selection-end-line="22" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spring_beans/src/main/resources/f_AOP_firstInstance.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="76">
+          <caret line="19" column="69" selection-start-line="19" selection-start-column="69" selection-end-line="19" selection-end-column="69" />
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectJDKs.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+</project>

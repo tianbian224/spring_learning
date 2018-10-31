@@ -1,0 +1,11 @@
+说明：
+测试spring执行初始化方法和执行销毁方法。
+销毁方式有三种：
+1. 通过@PostConstruct 和 @PreDestroy 方法 实现初始化和销毁bean之前进行的操作
+    未经测试
+
+2. 通过 在xml中定义init-method 和  destory-method方法
+    测试，在spring容器关闭的时候调用销毁方法
+
+3. 通过bean实现InitializingBean和 DisposableBean接口
+   测试，在spring容器关闭的时候调用销毁方法

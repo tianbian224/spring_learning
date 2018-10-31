@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:aop="http://www.springframework.org/schema/aop"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+           http://www.springframework.org/schema/beans/spring-beans-2.5.xsd
+
+
+            http://www.springframework.org/schema/aop
+           http://www.springframework.org/schema/aop/spring-aop-2.5.xsd">
+
+
+    <!--================================ AOP 切面使用 ================================ -->
+    <bean id="player" class="g_AOP_advices.target.Fanbingbing"></bean>
+    <bean id="usetime" class="g_AOP_advices.aspect.Advices"></bean>
+
+
+    <aop:config>
+        <aop:pointcut id="qierudian" expression="execution(* g_AOP_advices.target.*.*(..))"/>
+
+        <aop:aspect id="qiemian" ref="usetime">
+            <!--环绕通知 -->
+            <aop:around method="aroundAdvice" pointcut-ref="qierudian"/>
+            <!--<aop:after-throwing method="exceptionAdvice" pointcut-ref="qierudian" throwing="yichang"/>-->
+        </aop:aspect>
+
+    </aop:config>
+</beans>
+	

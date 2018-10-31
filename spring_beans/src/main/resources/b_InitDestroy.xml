@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+           http://www.springframework.org/schema/beans/spring-beans-2.5.xsd">
+    <!-- 销毁方法和初始化方法 -->
+    <bean id="c" class="b_InitDestroy.model.ABCBean" init-method="init" destroy-method="destroy"></bean>
+
+
+    <bean id="acdef" class="b_InitDestroy.model.Acdef"></bean>
+
+    <!-- 懒加载bean -->
+    <bean id="lazyBean" class="b_InitDestroy.model.LazyBean" lazy-init="true"></bean>
+
+    <!--  默认是单利模式，通过设置scope="prototype"得到多例模式，此时lazy-init="false"失效 -->
+    <bean id="prototypeBean" class="b_InitDestroy.model.PrototypeBean" lazy-init="false" scope="prototype"></bean>
+</beans>
+           

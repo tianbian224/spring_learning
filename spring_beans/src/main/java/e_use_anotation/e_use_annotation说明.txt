@@ -1,0 +1,12 @@
+
+装配的方式有三种：
+1.  自动装配。@Component、@Autowired、@@Configuration、@ComponentScan(basePackages = "xxx")
+    适合于在自己写的 代码中加这些注释，因为有源代码
+
+2.  java方式。
+    使用别人的代码，没办法加上上边的注释，所以只能使用xml方式或者 java代码进行依赖注入
+    也就是使用 @Bean和方法名作为bean 的id
+    这个没什么卵用，还不如用 xml方便
+
+3.  使用xml配置
+    这个已经比较熟悉来了

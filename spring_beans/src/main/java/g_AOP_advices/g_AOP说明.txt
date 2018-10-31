@@ -1,0 +1,38 @@
+<aop:config>
+        <aop:pointcut expression="execution(* g_AOP_advices.target.Fanbingbing.*(..))" id="p1"/>
+        <aop:aspect id="shijian" ref="usetime">
+            <aop:around method="aroundAdvice" pointcut-ref="p1"/>
+            <aop:before method="beginTime" pointcut-ref="p1"/>
+            <aop:after-returning method="endTime" returning="returnValues" pointcut-ref="p1"/><!-- 返回值给后置通知使用 -->
+            <aop:after method="finalAdvice" pointcut-ref="p1"/>
+            <aop:after-throwing method="exceptionAdvice" throwing="yichang" pointcut-ref="p1"/>
+        </aop:aspect>
+</aop:config>
+
+1. 前置通知
+    <aop:config>
+        <aop:pointcut id="qierudian" expression="execution(* g_AOP_advices.target.*.*(..))"/>
+
+        <aop:aspect id="qiemian" ref="usetime">
+            <aop:before method="beginTime" pointcut-ref="qierudian"/>
+        </aop:aspect>
+
+    </aop:config>
+2. 后置通知
+     <aop:config>
+            <aop:pointcut id="qierudian" expression="execution(* g_AOP_advices.target.*.*(..))"/>
+            <aop:aspect id="qiemian" ref="usetime">
+                <aop:after-returning method="endTime" pointcut-ref="qierudian" returning="returnValues"/>
+            </aop:aspect>
+     </aop:config>
+3. 最终通知
+    <aop:config>
+            <aop:pointcut id="qierudian" expression="execution(* g_AOP_advices.target.*.*(..))"/>
+
+            <aop:aspect id="qiemian" ref="usetime">
+                <!--最终通知-->
+                <aop:after method="finalAdvice" pointcut-ref="qierudian"/>
+            </aop:aspect>
+
+     </aop:config>
+4. 环绕通知

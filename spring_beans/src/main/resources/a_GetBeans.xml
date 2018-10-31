@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xmlns="http://www.springframework.org/schema/beans"
+       xsi:schemaLocation="
+       http://www.springframework.org/schema/beans
+       http://www.springframework.org/schema/beans/spring-beans.xsd
+       http://www.springframework.org/schema/context
+       http://www.springframework.org/schema/context/spring-context.xsd
+       ">
+
+
+    <!-- ===================================三种产生bean的方法========================= -->
+    <!-- 直接获取数据 -->
+    <bean id="abcd" class="a_GetBeans.Abcd"></bean>
+
+
+    <!-- 静态工厂，就是工厂获取bean的方法时静态 -->
+    <bean id="staticFactory" class="a_GetBeans.StaticFactory" factory-method="getAbcd"></bean>
+
+
+    <!-- 实例工厂，获取bean的方法是实例方法 -->
+    <bean id="a" class="a_GetBeans.InstanceFactory"></bean>
+    <bean id="b" factory-bean="a" factory-method="getbeanAbcd"></bean>
+
+</beans>
+           

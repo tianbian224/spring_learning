@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:aop="http://www.springframework.org/schema/aop"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+           http://www.springframework.org/schema/beans/spring-beans-2.5.xsd
+            http://www.springframework.org/schema/aop
+           http://www.springframework.org/schema/aop/spring-aop-2.5.xsd">
+
+
+    <bean id="dao" class="i_AOP_TestTime.DaoImp"></bean>
+    <bean id="service" class="i_AOP_TestTime.ServiceImp">
+        <property name="dao" ref="dao"></property>
+    </bean>
+    <bean id="qiemian" class="i_AOP_TestTime.TestTime"></bean>
+    <aop:config proxy-target-class="true">
+        <!-- ===================统计时间和相关的执行次数=================== -->
+        <aop:pointcut expression="execution(* i_AOP_TestTime.*.*(..))" id="qierudian"/>
+        <aop:aspect ref="qiemian">
+            <aop:around method="testEachTime" pointcut-ref="qierudian"/>
+            <aop:after-throwing method="catchException" throwing="ex" pointcut-ref="qierudian"/>
+        </aop:aspect>
+
+    </aop:config>
+
+</beans>
+           

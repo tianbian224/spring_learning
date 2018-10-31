@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+           http://www.springframework.org/schema/beans/spring-beans-2.5.xsd">
+
+    <!--================================ 依赖注入 ================================ -->
+    <!-- 构造函数进行依赖注入 -->
+    <bean id="person" class="d_how_to_DI.Person">
+        <constructor-arg index="0" value="lvcang"></constructor-arg>
+        <constructor-arg index="1" value="12"></constructor-arg>
+    </bean>
+
+    <!-- 针对不同类型的数据，如何进行注入 -->
+    <bean id="animal" class="d_how_to_DI.Animal">
+        <!-- 这里给基本类型赋值 -->
+        <property name="name" value="huahua"></property>
+        <property name="age" value="2"></property>
+        <property name="gender" value="false"></property>
+
+        <!-- 直接给引用类型赋值 -->
+        <property name="ppp"><!-- 直接给引用类型赋值 -->
+            <bean class="d_how_to_DI.Person">
+                <property name="name" value="AA"></property>
+                <property name="age" value="23"></property>
+            </bean>
+        </property>
+        <!-- 或者引用bean -->
+
+        <!-- 这里给数组赋值 -->
+        <property name="habits">
+            <list>
+                <value>吃饭</value>
+                <value>看电影</value>
+                <value>12</value>
+                <ref bean="person"/>
+            </list>
+        </property>
+        <!-- 这里给无泛型 list赋值 -->
+        <property name="list">
+            <list>
+                <value>列表1</value>
+                <value>列表二</value>
+                <ref bean="person"/>
+            </list>
+        </property>
+        <!-- 这里给有泛型 list赋值 -->
+        <property name="persons">
+            <list>
+                <ref bean="person"/>
+                <ref bean="person"/>
+            </list>
+        </property>
+        <!-- 这里给set赋值，注意还赋值了一个Person -->
+        <property name="set">
+            <set>
+                <value>村上春树</value>
+                <value>12</value>
+                <ref bean="person"/>
+            </set>
+        </property>
+        <!-- 给map赋不同类型的值 -->
+        <property name="map">
+            <map>
+                <entry key="key1" value="value1"></entry>
+                <entry key="key2" value-ref="person"></entry>
+                <entry>
+                    <key>
+                        <bean class="c_UnderstandingIoCAndID.Pencil"></bean>
+                    </key>
+                    <ref bean="person"/>
+                </entry>
+            </map>
+        </property>
+        <!-- 给property赋值 -->
+        <property name="properties">
+            <props>
+                <prop key="属性1">蛇</prop>
+                <prop key="属性2">马</prop>
+            </props>
+        </property>
+    </bean>
+    <!-- 继承关系进行依赖注入 -->
+    <bean id="person2" class="d_how_to_DI.Person">
+        <property name="name" value="lihuanhaun"></property>
+        <property name="age" value="12"></property>
+    </bean>
+    <bean id="worker" class="d_how_to_DI.Worker" parent="person2"></bean>
+    <bean id="worker2" class="d_how_to_DI.Worker">
+        <property name="name" value="lij"></property>
+        <property name="age" value="4545"></property>
+    </bean>
+
+</beans>
+           

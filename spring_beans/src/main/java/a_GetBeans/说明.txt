@@ -1,0 +1,18 @@
+
+使用三种方法拿到bean：
+1. 直接配置bean
+    <bean id="abcd" class="a_GetBeans.Abcd"></bean>
+
+
+2. 静态工厂得到bean
+    <!-- 静态工厂，就是工厂获取bean的方法时静态 -->
+    <bean id="staticFactory" class="a_GetBeans.StaticFactory" factory-method="getAbcd"></bean>
+    实际上创建了静态工厂对象，执行了其构造函数，然后执行获取bean的方法
+
+3. 实例工厂得到bean
+     <bean id="a" class="a_GetBeans.InstanceFactory"></bean>
+     <bean id="b" factory-bean="a" factory-method="getbeanAbcd"></bean>
+
+
+懒加载：
+当需要这个bean的时候才会使用构造函数。默认是非懒加载，即创建spring容器即马上创建bean，懒加载时并不创建

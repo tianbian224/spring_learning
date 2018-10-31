@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:aop="http://www.springframework.org/schema/aop"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+           http://www.springframework.org/schema/beans/spring-beans-2.5.xsd
+
+
+            http://www.springframework.org/schema/aop
+           http://www.springframework.org/schema/aop/spring-aop-2.5.xsd">
+
+
+    <bean id="dao" class="h_AOP_zuoYe_Privilige.impl.DaoImp"></bean>
+    <bean id="service" class="h_AOP_zuoYe_Privilige.impl.ServiceImp">
+        <property name="dao" ref="dao"></property>
+    </bean>
+    <bean id="qiemian" class="h_AOP_zuoYe_Privilige.QieMian"></bean>
+
+
+    <aop:config proxy-target-class="true">
+        <!-- ===================权限验证================================= -->
+        <aop:pointcut expression="execution(* h_AOP_zuoYe_Privilige.impl.ServiceImp.*(..))" id="quanxian"/>
+        <aop:aspect ref="qiemian">
+            <aop:around method="testPrivilege" pointcut-ref="quanxian"/><!-- 使用环绕通知 控制是否执行-->
+        </aop:aspect>
+    </aop:config>
+    <!-- <context:component-scan base-package="day161219注解的使用"></context:component-scan> -->
+    <!-- <aop:aspectj-autoproxy></aop:aspectj-autoproxy> -->
+</beans>
+           
